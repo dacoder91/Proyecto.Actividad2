@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_primary90"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!-- ImageView para el icono de la aplicación -->
+    <ImageView
+        android:id="@+id/icono_app"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:src="@drawable/icono_app" />
+
+    <!-- ImageView para el Drawable "bienvenido" -->
+    <ImageView
+        android:id="@+id/imagen_bienvenido"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icono_app"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-218dp"
+        android:src="@drawable/bienvenido" />
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Campo para buscar empleado por ID -->
+        <EditText
+            android:id="@+id/editId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID del Empleado" />
+
+        <Button
+            android:id="@+id/btnBuscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buscar" />
+
+        <!-- Campos del empleado -->
+        <EditText
+            android:id="@+id/editNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre" />
+
+        <EditText
+            android:id="@+id/editPrimerApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Primer Apellido" />
+
+        <EditText
+            android:id="@+id/editSegundoApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Segundo Apellido" />
+
+        <EditText
+            android:id="@+id/editDni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DNI" />
+
+        <EditText
+            android:id="@+id/editFechaNacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha de Nacimiento (yyyy-MM-dd)" />
+
+        <EditText
+            android:id="@+id/editDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dirección" />
+
+        <!-- Campos del puesto de trabajo -->
+        <EditText
+            android:id="@+id/editPuestoNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del Puesto" />
+
+        <EditText
+            android:id="@+id/editPuestoDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descripción del Puesto" />
+
+        <!-- Campos del horario laboral -->
+        <EditText
+            android:id="@+id/editHorarioEntrada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Horario de Entrada (HH:mm:ss)" />
+
+        <EditText
+            android:id="@+id/editHorarioSalida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Horario de Salida (HH:mm:ss)" />
+
+        <EditText
+            android:id="@+id/editDiasLaborales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Días Laborales (1-7)" />
+
+        <!-- Botón Guardar -->
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar Cambios" />
+
+    </LinearLayout>
+</ScrollView>

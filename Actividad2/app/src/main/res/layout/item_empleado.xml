@@ -1,55 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="8dp"
-    app:cardElevation="4dp"
-    app:cardCornerRadius="8dp">
+    android:orientation="vertical"
+    android:padding="16dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/txtId"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:text="ID: 1"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
-        <!-- ID del empleado -->
-        <TextView
-            android:id="@+id/txtId"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ID: 123"
-            android:textSize="16sp"
-            android:textColor="@android:color/darker_gray" />
+    <TextView
+        android:id="@+id/txtNombreCompleto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre Completo"
+        android:textSize="16sp" />
 
-        <!-- Nombre completo del empleado -->
-        <TextView
-            android:id="@+id/txtNombreCompleto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Nombre Completo"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginTop="8dp" />
+    <TextView
+        android:id="@+id/txtDni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DNI: 12345678A"
+        android:textSize="14sp" />
 
-        <!-- Puesto de trabajo -->
-        <TextView
-            android:id="@+id/txtPuesto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Puesto de Trabajo"
-            android:textSize="16sp"
-            android:layout_marginTop="8dp" />
+    <TextView
+        android:id="@+id/txtFechaNacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de Nacimiento: 01-01-1990"
+        android:textSize="14sp" />
 
-        <!-- Horario laboral -->
-        <TextView
-            android:id="@+id/txtHorario"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Horario Laboral"
-            android:textSize="16sp"
-            android:layout_marginTop="8dp" />
+    <TextView
+        android:id="@+id/txtDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dirección: Calle Falsa 123"
+        android:textSize="14sp" />
 
-    </LinearLayout>
+    <TextView
+        android:id="@+id/txtPuesto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puesto: Desarrollador"
+        android:textSize="14sp" />
 
-</androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/txtDescripcionPuesto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripción: Desarrollo de aplicaciones"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txtHorario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horario: 09:00 - 18:00"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txtDiasLaborales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Días Laborales: 5"
+        android:textSize="14sp" />
+
+</LinearLayout>
